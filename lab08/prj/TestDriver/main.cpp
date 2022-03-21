@@ -19,11 +19,11 @@ int main()
          cout << round(s_calculation(x[i], y[i], z[i])10000)/10000.0 << endl;
          if (round(s_calculation(x[i], y[i], z[i])10000)/10000.0 == round(possibleresult[i]*10000)/10000.0)
             {
-            cout << "TEST N[" << i + 1 << "]: PASSED\n";
+            cout << "TEST №[" << i + 1 << "]: PASSED\n";
         }
         else
         {
-            cout << "TEST N[" << i + 1 << "]: FAILED\n";
+            cout << "TEST №[" << i + 1 << "]: FAILED\n";
         }
     }
 
