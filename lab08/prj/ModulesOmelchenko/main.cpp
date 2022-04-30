@@ -2,6 +2,8 @@
 #include <cmath>
 #include <math.h>
 #include <cstdio>
+#include <windows.h>
+#include <bitset>
 
 using namespace std;
 
@@ -9,58 +11,78 @@ float s_calculation(float x, float y, float z)
 {
     return 0.5 * ( pow (x,2)) - sqrt(abs(((pow((y+z),2)) - (pow(x,5)) ))) - log(abs(sin(z)));
 }
-int deposit(int summpercent, int summwithpercent, int sum, int months)
+
+float deposit(float summ, short months)
 {
-    summwithpercent = sum * pow((1+0.18/12), months);
-    summpercent = summwithpercent - sum;
-    cout << "Сума з вiдсотками: " << summwithpercent << endl;
-    cout << "Сума вiдсоткiв: " << summpercent << endl;
-    cout << "Щомiсячнi виплати: " << summpercent / months << endl;
+    float monthly, a;
+
+    if(months == 6)
+    {
+        a = (summ*16)/100;
+        monthly = a/6;
+    }
+    if (months == 12)
+    {
+        a = (summ*18)/100;
+        monthly = a/12;
+    }
+    return monthly;
 }
-float bofort(double max, double chisla)
+
+int bofort(int viter[31]){
+    float max = viter[0];
+    for(int i = 1;i<31;i++){
+        if (viter[i] > max){
+            max = viter[i];
+        }
+    }
+    if (max < 0.3){
+        return 0;
+    }
+    else if (max < 1.5){
+        return 1;
+    }
+    else if (max < 3.4){
+        return 2;
+    }
+    else if (max < 5.4){
+        return 3;
+    }
+    else if (max < 7.9){
+        return 4;
+    }
+    else if (max < 10.7){
+        return 5;
+    }
+    else if (max < 13.8){
+        return 6;
+    }
+    else if (max < 17.1){
+        return 7;
+    }
+    else if (max < 20.7){
+        return 8;
+    }
+    else if (max < 24.4){
+        return 9;
+    }
+    else if (max < 28.4){
+        return 10;
+    }
+    else if (max < 32.6){
+        return 11;
+    }
+    else {
+        return 12;
+    }
+}
+
+int bitnum(int num)
 {
-    for (int j = 1 ; j <= 31 ; j++) {
-        if (chisla>max)
-            max=chisla;
-    cout << "Введiть данi на " << j << " ciчня: ";
-}
-     if (chisla < 0.3) {
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Бали Бофорта - 0. Відсутність вітру. Дим піднімається прямовисно. Листя дерев нерухомі" << endl;
+    bitset<32> b_number(num);
+    if(b_number[13])
+    {
+        return b_number.count();
     }
-    else if (0.3 <= chisla && chisla <= 1.5) {
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Бали Бофорта - 1. Дим пливе. Флюгер не обертається." << endl;
-    }
-    else if (1.6 <= chisla && chisla <= 3.4) {
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Рух повітря відчувається обличчям. Шелестить листя, Флюгеро обертається." << endl;
-    }
-    else if (3.4 <= chisla && chisla <= 5.4) {
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Бали Бофорта - 3. Тріпоче листя, хитаються дрібні гілки. Майорять прапори." << endl;
-    }
-    else if (5.5 <= chisla && chisla <= 7.9) {
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Бали Бофорта - 4. Хитаються тонкі гілки дерев. Вітер піднімає пил та шматки паперу." << endl;
-    }
-    else if (8.0 <= chisla && chisla <= 10.7) {
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Бали Бофорта - 5. Хитаються великі гілки. На воді з'являються хвилі." << endl;
-    }
-    else if (10.8 <= chisla && chisla <= 13.8) {
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Бали Бофорта - 6. Хитаються великі гілки" << endl;
-    }
-    else if (13.9 <= chisla && chisla <= 17.1) {
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Бали Бофорта - 7. Хитаються невеликі стовбури дерев. На морі здіймаються хвилі, піняться" << endl;
-    }
-    else if (17.2 <= chisla && chisla <= 20.7) {
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Бали Бофорта - 8. Ламаються гілки дерев і важко йти проти вітру" << endl;
-    }
-    else if (20.8 <= chisla && chisla <= 24.4) {
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Бали Бофорта - 9. Невеликі руйнування, Зриває покрівлі, руйнує димарі" << endl;
-    }
-    else if (24.5 <= chisla && chisla <= 28.4) {
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Бали Бофорта - 10. Значні руйнування. Дерева вириваються з корінням" << endl;
-    }
-    else if (28.5 <= chisla && chisla <= 32.6) {
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Бали Бофорта - 11. Великі руйнування" << endl;
-    }
-    else if (chisla >= 32.7){
-        cout << "Максимальна швидкість вітру продовж січня:" << max << "Бали Бофорта - 12. Призводить до спустошень" << endl;
-    }
+    return 32 - b_number.count();
 }
