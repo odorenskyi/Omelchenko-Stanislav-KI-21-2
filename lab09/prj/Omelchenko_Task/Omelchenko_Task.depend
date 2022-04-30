@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1651336081 source:d:\omelchenko-stanislav-ki-21-2\lab09\prj\omelchenko_task\main.cpp
+	<iostream>
+	<conio.h>
+	"ModulesOmelchenko.h"
+
+1651333820 d:\omelchenko-stanislav-ki-21-2\lab08\prj\modulesomelchenko.h
+	<iostream>
+	<cmath>
+	<math.h>
+	<cstdio>
+	<windows.h>
+	<bitset>
+
