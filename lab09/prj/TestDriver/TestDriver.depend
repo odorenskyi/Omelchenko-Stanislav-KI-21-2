@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1651337097 source:d:\omelchenko-stanislav-ki-21-2\lab09\prj\testdriver\main.cpp
+	<iostream>
+	<cmath>
+	<math.h>
+	<cstdio>
+	<windows.h>
+	<bitset>
+	"ModulesOmelchenko.h"
+
+1651333820 d:\omelchenko-stanislav-ki-21-2\lab08\prj\modulesomelchenko.h
+	<iostream>
+	<cmath>
+	<math.h>
+	<cstdio>
+	<windows.h>
+	<bitset>
+
