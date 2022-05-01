@@ -34,7 +34,7 @@ void depositfunction()
     cin >> summ;
     cout << "Ââåäiòü ñòðîê: ";
     cin >> month;
-    cout << deposit(summ, month) << endl;
+    cout << "Сума за мiсяць: " << deposit(summ, month) << endl;
 }
 
 void bofortfunction()
