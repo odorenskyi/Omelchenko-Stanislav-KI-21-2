@@ -89,6 +89,5 @@ int bitnum(int num)
     }
     return 32 - b_number.count();
 }
-//cout << "Ââåäiòü äàíi íà " << j << " ci÷íÿ: ";
 
 #endif // MODULESOMELCHENKO_H_INCLUDED
