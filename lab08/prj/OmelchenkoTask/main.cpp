@@ -1,51 +1,59 @@
 #include <iostream>
 #include "ModulesOmelchenko.h"
+#include <clocale>
+#include <iomanip>
+#include <conio.h>
+#include <cstring>
 
 using namespace std;
 
-void copyrightsign()
+void copyright()
 {
-    cout << "© Омельченко Станіслав" << endl << endl;
+    cout << "© Іванченко Олександр" << endl << endl;
 }
-void expression ()
+
+void res ()
 {
-    int  a ,b ;
+    int  a = 0,b = 0;
     if (a + 1 <= b){
-        cout <<"1"<<endl;
+        cout <<"Результат виразу 1"<<endl;
     }
     else {
-        cout <<"0"<<endl;
+        cout <<"Результат виразу 0"<<endl;
     }
 
 }
-void DH(int x, int y, int z){
-    cout << "(x) в десятковій системі числення: " << x << endl
-         << "(y) в десятковій системі числення: " << y << endl
-         << "(z) в десятковій системі числення: " << z << endl << endl;
+void decimalHexNumbersOutput(int x, int y, int z){
 
-    cout << "(x) в шістнацятковій системі числення: " << hex << x << endl
-         << "(y) в шістнацятковій системі числення: " << hex << y << endl
-         << "(z) в шістнацятковій системі числення: " << hex << z << endl;
+
+
+    cout << "x В десятковій: " << dec << x << "\t x В шістнадцятковій: " << hex << x << endl;
+    cout << "y В десятковій: " << dec << y << "\t y В шістнадцятковій: " << hex << y << endl;
+    cout << "z В десятковій: " << dec << z << "\t z В шістнадцятковій: " << hex << z << endl << endl;
+
+
 }
 
 int main()
 {
     system("chcp 866 && cls");
-    copyrightsign();
-    int x = 0,y = 0,z = 0;
-    int  a ,b ;
-    cout << "Задайте значення: x" << endl;
+    copyright();
+    float x ,y ,z ;
+    int  a = 0,b = 0;
+    cout << "Введіть x" << endl;
     cin >> x;
-    cout << "Задайте значення: y" << endl;
+    cout << "Введіть y" << endl;
     cin >> y;
-    cout << "Задайте значення: z" << endl;
+    cout << "Введіть z" << endl;
     cin >> z;
-    cout << "Задайте значення: a" << endl;
+    cout << "Введіть a" << endl;
     cin >> a ;
-    cout << "Задайте значення: b" << endl;
-    cin >> b ;
-    cout <<"S = "<< s_calculation(x,y,z)<< endl;
-    expression();
-    DH(x,y,z);
+    cout << "Введіть b" << endl;
+    cin >> b;
+    cout <<"S = "<< s_calculation(x, y, z)<< endl;
+    res();
+    decimalHexNumbersOutput(x, y, z);
+    cout << endl << "Результат виразу: " << s_calculation(x, y, z);
+    getch();
     return 0;
 }
