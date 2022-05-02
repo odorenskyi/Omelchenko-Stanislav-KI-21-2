@@ -34,7 +34,7 @@ void depositfunction()
     cin >> summ;
     cout << "¬ведiть строк: ";
     cin >> month;
-    cout << "—ума котру потрiбно сплатити за мiс€ць: " << deposit(summ, month) << endl;
+    cout << "—ума за мiс€ць: " << deposit(summ, month) << endl;
 }
 
 void bofortfunction()
@@ -57,6 +57,7 @@ void bitfunction()
 
 int main()
 {
+    system("chcp 866 && cls");
     char symbol = 'm';
     while (1)
     {
