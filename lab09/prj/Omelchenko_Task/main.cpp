@@ -11,18 +11,18 @@ void menu()
          << " h - Task 9.1"      << endl
          << " g - Task 9.2"      << endl
          << " f - Task 9.3"      << endl
-         << " c, d, D - Âèõiä"   << endl
-         << " m - Ìåíþ" <<  endl << endl;
+         << " c, d, D - Вихід"   << endl
+         << " m - Меню" <<  endl << endl;
 }
 
 void s_calcfunction()
 {
     double x, y, z;
-    cout << "Ââåäiòü x: ";
+    cout << "Введіть x: ";
     cin >> x;
-    cout << "Ââåäiòü y: ";
+    cout << "Введіть y: ";
     cin >> y;
-    cout << "Ââåäiòü z: ";
+    cout << "Введіть z: ";
     cin >> z;
     cout << s_calculation(x, y, z) << endl;
 }
@@ -30,15 +30,11 @@ void s_calcfunction()
 void depositfunction()
 {
     float summ, month;
-    cout << "Ââåäiòü ñóìó äåïîçèòó: ";
+    cout << "Введіть суму депозиту ";
     cin >> summ;
-    cout << "Ââåäiòü ñòðîê: ";
+    cout << "Ввндіть строк: ";
     cin >> month;
-<<<<<<< HEAD
-    cout << "���� �� �i����: " << deposit(summ, month) << endl;
-=======
     cout << "Сума за мiсяць: " << deposit(summ, month) << endl;
->>>>>>> 1d4484dc01fab1f90e852792320d770e96700d02
 }
 
 void bofortfunction()
@@ -48,13 +44,13 @@ void bofortfunction()
     {
         cin >> viter[i];
     }
-    cout << "Áàë áîôîðòà - " <<  bofort(viter) << endl;
+    cout << "Бал бофорта - " <<  bofort(viter) << endl;
 }
 
 void bitfunction()
 {
     int num;
-    cout << "Ââåäiòü íàòóðàëüíå ÷èñëî (0 - 9008000): " << endl;
+    cout << "Введіть натуральне число (0 - 9008000): " << endl;
     cin >> num;
     cout << bitnum(num) << endl;
 }
@@ -82,7 +78,7 @@ int main()
     if (symbol == 'f')
             bitfunction();
 
-    cout << "Íàòèñíiòü êëàâiøó: ";
+    cout << "Нажміть клавішу: ";
     cin >> symbol;
     }
     return 0;
