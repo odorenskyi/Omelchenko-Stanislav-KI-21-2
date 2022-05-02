@@ -9,7 +9,7 @@ using namespace std;
 
 void copyright()
 {
-    cout << "© Іванченко Олександр" << endl << endl;
+    cout << "© Омельченко Станіслав" << endl << endl;
 }
 
 void res ()

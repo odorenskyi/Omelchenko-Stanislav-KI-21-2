@@ -11,18 +11,18 @@ void menu()
          << " h - Task 9.1"      << endl
          << " g - Task 9.2"      << endl
          << " f - Task 9.3"      << endl
-         << " c, d, D - Âèõiä"   << endl
-         << " m - Ìåíş" <<  endl << endl;
+         << " c, d, D - Ã‚Ã¨ÃµiÃ¤"   << endl
+         << " m - ÃŒÃ¥Ã­Ã¾" <<  endl << endl;
 }
 
 void s_calcfunction()
 {
     double x, y, z;
-    cout << "Ââåäiòü x: ";
+    cout << "Ã‚Ã¢Ã¥Ã¤iÃ²Ã¼ x: ";
     cin >> x;
-    cout << "Ââåäiòü y: ";
+    cout << "Ã‚Ã¢Ã¥Ã¤iÃ²Ã¼ y: ";
     cin >> y;
-    cout << "Ââåäiòü z: ";
+    cout << "Ã‚Ã¢Ã¥Ã¤iÃ²Ã¼ z: ";
     cin >> z;
     cout << s_calculation(x, y, z) << endl;
 }
@@ -30,11 +30,15 @@ void s_calcfunction()
 void depositfunction()
 {
     float summ, month;
-    cout << "Ââåäiòü ñóìó äåïîçèòó: ";
+    cout << "Ã‚Ã¢Ã¥Ã¤iÃ²Ã¼ Ã±Ã³Ã¬Ã³ Ã¤Ã¥Ã¯Ã®Ã§Ã¨Ã²Ã³: ";
     cin >> summ;
-    cout << "Ââåäiòü ñòğîê: ";
+    cout << "Ã‚Ã¢Ã¥Ã¤iÃ²Ã¼ Ã±Ã²Ã°Ã®Ãª: ";
     cin >> month;
+<<<<<<< HEAD
     cout << "Ñóìà çà ìiñÿöü: " << deposit(summ, month) << endl;
+=======
+    cout << "Ğ¡ÑƒĞ¼Ğ° Ğ·Ğ° Ğ¼iÑÑÑ†ÑŒ: " << deposit(summ, month) << endl;
+>>>>>>> 1d4484dc01fab1f90e852792320d770e96700d02
 }
 
 void bofortfunction()
@@ -44,13 +48,13 @@ void bofortfunction()
     {
         cin >> viter[i];
     }
-    cout << "Áàë áîôîğòà - " <<  bofort(viter) << endl;
+    cout << "ÃÃ Ã« Ã¡Ã®Ã´Ã®Ã°Ã²Ã  - " <<  bofort(viter) << endl;
 }
 
 void bitfunction()
 {
     int num;
-    cout << "Ââåäiòü íàòóğàëüíå ÷èñëî (0 - 9008000): " << endl;
+    cout << "Ã‚Ã¢Ã¥Ã¤iÃ²Ã¼ Ã­Ã Ã²Ã³Ã°Ã Ã«Ã¼Ã­Ã¥ Ã·Ã¨Ã±Ã«Ã® (0 - 9008000): " << endl;
     cin >> num;
     cout << bitnum(num) << endl;
 }
@@ -78,7 +82,7 @@ int main()
     if (symbol == 'f')
             bitfunction();
 
-    cout << "Íàòèñíiòü êëàâiøó: ";
+    cout << "ÃÃ Ã²Ã¨Ã±Ã­iÃ²Ã¼ ÃªÃ«Ã Ã¢iÃ¸Ã³: ";
     cin >> symbol;
     }
     return 0;
