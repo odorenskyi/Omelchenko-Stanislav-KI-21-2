@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1651332328 source:d:\omelchenko-stanislav-ki-21-2\lab08\prj\modulesomelchenko\main.cpp
+	<iostream>
+	<cmath>
+	<math.h>
+	<cstdio>
+	<windows.h>
+	<bitset>
+
