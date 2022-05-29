@@ -7,3 +7,15 @@
 	<windows.h>
 	<bitset>
 
+1653856287 source:d:\omelchenko-stanislav-ki-21-2\lab10\prj\modulesomelchenko\main.cpp
+	<iostream>
+	<fstream>
+	<time.h>
+	<cstring>
+	<math.h>
+	<tgmath.h>
+	<windows.h>
+	<string>
+	<bitset>
+	<fstream>
+

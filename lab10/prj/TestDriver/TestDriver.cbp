@@ -13,14 +13,14 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="../../../lab08/prj" />
+					<Add directory="../../prj" />
 				</Compiler>
 				<Linker>
 					<Add option="-static-libstdc++" />
 					<Add option="-static-libgcc" />
 					<Add option="-static" />
-					<Add library="../../../lab08/prj/ModulesOmelchenko/bin/Debug/libModulesOmelchenko.a" />
-					<Add directory="../../../lab08/prj" />
+					<Add library="../ModulesOmelchenko/bin/Debug/libModulesOmelchenko.a" />
+					<Add directory="../../prj" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -39,14 +39,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
-			<Add directory="../../../lab08/prj" />
+			<Add directory="../../prj" />
 		</Compiler>
 		<Linker>
 			<Add option="-static-libstdc++" />
 			<Add option="-static-libgcc" />
 			<Add option="-static" />
-			<Add library="../../../lab08/prj/ModulesOmelchenko/bin/Debug/libModulesOmelchenko.a" />
-			<Add directory="../../../lab08/prj" />
+			<Add library="../ModulesOmelchenko/bin/Debug/libModulesOmelchenko.a" />
+			<Add directory="../../prj" />
 		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>

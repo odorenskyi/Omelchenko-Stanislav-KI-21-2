@@ -1,12 +1,20 @@
 # depslib dependency file v1.0
-1653830423 source:d:\omelchenko-stanislav-ki-21-2\lab10\prj\testdriver\main.cpp
+1653832443 source:d:\omelchenko-stanislav-ki-21-2\lab10\prj\testdriver\main.cpp
 	<iostream>
 	<cstring>
 	<conio.h>
 	<iomanip>
 	"ModulesOmelchenko.h"
 
-1653738324 d:\omelchenko-stanislav-ki-21-2\lab08\prj\modulesomelchenko.h
+1653835388 d:\omelchenko-stanislav-ki-21-2\lab08\prj\modulesomelchenko.h
+	<iostream>
+	<cmath>
+	<math.h>
+	<cstdio>
+	<windows.h>
+	<bitset>
+
+1653856698 d:\omelchenko-stanislav-ki-21-2\lab10\prj\modulesomelchenko.h
 	<iostream>
 	<fstream>
 	<time.h>
@@ -16,4 +24,5 @@
 	<windows.h>
 	<string>
 	<bitset>
+	<fstream>
 
